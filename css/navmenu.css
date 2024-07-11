@@ -1,0 +1,224 @@
+.navMenu {
+    background-color: white;
+    height: 100%;
+  }
+  
+  .nav {
+    padding: 30px 24px 20px 24px;
+    min-height: 100vh;
+    border-right: 1px solid rgb(219, 219, 219);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+  }
+  
+  .nav__menu__container li {
+    margin-bottom : 25px;
+  }
+
+  
+.nav__menu__a img {
+    width : 24px;
+    margin-right: 10px;
+  }
+  
+  .nav__menu__a span {
+    color : black;
+    position: relative;
+    bottom : 6px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  .nav__menu__dropdownItem img{
+   width : 24px;
+  }
+  
+  .nav__more img {
+    width: 24px;
+    margin-right : 10px;
+  }
+  
+  .nav__more__btn {
+    background-color: white;
+    border: none;
+    position: relative; 
+    bottom: 45px;
+  }
+  
+  
+  /* 호버 시 커서가 손가락으로 바뀜 */
+  .nav__more__btn:hover { 
+    cursor: pointer;
+  }
+  
+  .nav__more__btn span {
+    font-size: 16px;
+    position: relative;
+    bottom: 6px;
+  }
+  
+  /* 더보기 안에 dropdown menu */
+  /* absolute : 부모의 포지션 따라감 */
+  /* 초기엔 더보기 내용이 가려져야하므로 bottom : -500px */
+  .nav__more__dropdownMenu {
+    width : 160px;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 12px;
+    position: absolute;
+    bottom: -500px;
+    left : 30px;
+    background-color: white;
+    transition: all 0.5s ease;
+  }
+  
+  /* 클릭하면 보이게 */
+  .nav__more__dropdownMenu.show {
+    position: absolute;
+    bottom : 110px;
+    transition: all 0.75s ease;
+  }
+  
+  .nav__more__dropdownItem span{
+    color: black;
+  }
+  
+  .nav__more__dropdownItem img {
+    position: relative;
+    top: 6px;
+  }
+  
+  .nav__more__li {
+    margin-bottom: 10px; 
+    padding : 4px
+  }
+  
+  /* hover 시 바탕색 설정 */
+  .nav__more__li:hover {
+    background-color: rgb(230, 230, 230);
+  }
+  
+  
+  .nav__more__li:last-child {
+    margin-bottom: 6px;
+  }
+  
+  /* nav__bottom 스타일링 */
+  .nav__bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    z-index: 10;
+    background-color: white;
+  }
+  
+  .nav__bottom img {
+    width: 25px;
+  }
+
+  .navTop__search img {
+    width: 20px;
+    position: relative;
+    left: 26px;
+    top: 4px;
+    opacity: 0.5;
+  }
+  .navTop__right {
+    display: flex;
+    align-items: center;
+  }
+
+  .navTop__search {
+    margin-right: 16px;
+  }
+  .navTop__search input {
+    background-color: rgb(250, 250, 250);
+    border: none;
+    padding: 12px;
+    padding-left: 24px;
+    border-radius: 4px;
+    width: 220px;
+  }
+
+  .navTop__notification img {
+    width: 25px;
+  }
+
+  .navTop__sm {
+    display: none;
+    justify-content: space-around;
+    padding: 12px 0px;
+  }
+
+  .navTop__xm {
+    display: none;
+    justify-content: space-between;
+    padding: 8px 24px;
+  }
+
+  .navTop__xm__search img,
+  .navTop__xm__notification img {
+    width: 25px;
+  }
+
+  .navTop__xm__right {
+    display: flex;
+  }
+
+  .navTop__xm__notification {
+    margin-left:  4px;
+  }
+  
+/* 498 이하의 기종은 작은 모바일폰 */
+/* 498 ~ 768 이하의 기종은 큰 종류의 휴대폰 */
+/* 768 ~ 992 이하의 기종은 태블릿 */
+/* 992 이상은 모니터/PC */
+@media screen and (max-width:498px) {
+    
+    .navMenu {
+      display: none;
+    }
+  
+    .nav__bottom {
+      display: flex;
+    }
+  
+    .navTop__xm {
+      display: flex;
+    }
+   
+  }
+  
+  @media screen and (min-width:498px) and (max-width:768px){
+  
+
+    .nav__bottom {
+      display: flex;
+    }
+  
+    .navMenu {
+      display: none;
+    }
+  
+    .navTop__sm {
+      display: flex;
+    }
+
+  }
+  
+  @media screen and (min-width:768px) and (max-width:992px){
+    
+
+  }
+  
+  @media screen and (min-width:992px){
+
+  }
+  
+  
