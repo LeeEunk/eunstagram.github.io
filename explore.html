@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OutstaGroup</title>
+    <link rel="stylesheet" href="./css/explore.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/notification.css">
+    <link rel="stylesheet" href="./css/createModal.css">
+    <link rel="stylesheet" href="./css/addModal.css">
+    <link rel="stylesheet" href="./css/navmenu.css">
+    <link rel="stylesheet" href="./css/dim.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/af6b627894.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dim"></div>
+    <div class="mainContainer">
+        <div class="navMenu">
+            <div class="nav">
+            <div class="nav__logo">
+                <a href="./home.html">
+                    <img src="" alt="">
+                    로고
+                </a>
+            </div>
+            <div class="nav__menu">
+                <ul class="nav__menu__container">
+                <!-- navmenu.js 렌더링 -->
+                </ul>
+            </div>
+            <div class="nav__more">
+                <button class="nav__more__btn">
+                <img src="./images/loadmore.png" alt="">
+                <span>더보기</span>
+                </button>
+                <ul class="nav__more__dropdownMenu">
+                <!-- navmenu.js 렌더링 -->
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="navTop__sm">
+            <div class="navTop__logo">
+            </div>
+            <div class="navTop__right">
+                <div class="navTop__search">
+                    <img src="./images/search.png" alt="">
+                    <input type="search" placeholder="검색">
+                </div>
+                <div class="navTop__notification">
+                    <img src="./images/alarm.png" alt="">
+                </div>
+            </div>
+        </div>
+    <div class="navTop__xm">
+        <div class="navTop__xm__logo">
+        </div>
+        <div class="navTop__xm__right">
+            <div class="navTop__xm__search">
+                <img src="./images/message.png" alt="">
+            </div>
+            <div class="navTop__xm__notification">
+                <img src="./images/alarm.png" alt="">
+            </div>
+        </div>
+    </div>
+      <div class="nav__bottom">
+        <!-- (a>img)*5 -->
+        <a href="./home.html"><img src="./images/house.png" alt=""></a>
+        <a href="./explore.html"><img src="./images/explore.png" alt=""></a>
+        <a href="./reels.html"><img src="./images/video.png" alt=""></a>
+        <a href="#" id="createModalMobile"><img src="./images/write.png" alt=""></a>
+        <a href="./profile.html"><img src="https://i.pravatar.cc/150?img=33" alt=""></a>
+      </div>
+      <div class="exploreContainer">
+        <div class="exploreContainer__items">
+        <!-- js에서 가져옴 -->
+        </div>
+      </div>
+      <div class="searchSection">
+        <h1>검색</h1>
+        <form action="">
+          <input type="text" placeholder="검색">
+        </form>
+        <div class="searchSection__find">
+          <div class="searchSection__desc">
+            <h4>최근</h4>
+            <p>초기화</p>
+          </div>
+          <div class="searchSection__cart">
+            <div class="searchSection__profile">
+              <div class="searchSection__img">
+                <img src="https://i.pravatar.cc/150?img=24" alt="">
+              </div>
+              <div class="searchSection__info">
+                <p class="searchSection__nickname">베스트프렌드</p>
+                <p class="searchSection__name">정아무개</p>
+              </div>
+            </div>
+            <div class="searchSection__clear">
+              <a href="#">X</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notificationSection">
+        <h2>알람리스트</h2>
+        <div class="notificationSection__list">
+          <div class="notificationSection__cart follow_notif">
+            <div class="notificationSection__profile">
+              <div>
+                <img class="notificationSection__img"src="https://i.pravatar.cc/150?img=26" alt="">
+              </div>
+              <div class="notificationSection__info">
+                <p class="notificationSection__name">
+                  김아무개가
+                  <span>당신을 팔로우 했습니다</span>
+                  <span>2시간전</span>
+                </p>
+              </div>
+            </div>
+            <div class="notificationSection__follow">
+              <button class="notificationSection__button">Follow</button>
+            </div>
+          </div>
+          <div class="notificationSection__cart follow_story">
+            <div class="notificationSection__profile">
+              <div><img class="notificationSection__img"src="https://i.pravatar.cc/150?img=27" alt=""></div>
+              <div class="notificationSection__info">
+                <p class="notificationSection__name">
+                  최아무개가
+                  <span>당신을 스토리를 좋아합니다</span>
+                  <span>2일전</span>
+                </p>
+              </div>
+            </div>
+            <div class="notificationSection__story">
+              <img src="https://i.pravatar.cc/150?img=50" alt="">
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <div class="createModalContainer">
+        <div class="createModalContainer__modalDialog">
+          <div class="createModalContainer__modalContent">
+            <div class="createModalContainer__modalHeader">
+              <h1 class="createModalContainer__modalHeader__h1">게시물 생성하기</h1>
+              <div>
+                <button class="createModalContainer__modalHeader__btn"></button>
+                <i class="fa-solid fa-xmark" id="createModalClose"></i>
+              </div>
+            </div>
+            <div class="createModalContainer__modalBody">       
+                <img src="./images/upload.png" alt="">
+                <p>사진이나 영상을 여기로 가져오세요</p>
+                <button class="createModalContainer__btnUpload">
+                  당신의 컴퓨터에서 선택하세요
+                  <form action="" class="createModalContainer__btnUpload__form">
+                    <input type="file" class="createModalContainer__btnUpload__input">
+                  </form>
+                </button>
+              <div class="createModalContainer__imgContainer">
+                <img class="createModalContainer__imgContainer__img"  src="" alt="">
+              </div>
+              <div class="createModalContainer__description">
+                <div class="createModalContainer__description__left">
+                  <img class="createModalContainer__description__img" src="" alt="">
+                </div>
+                <div class="createModalContainer__description__right">
+                  <div class="createModalContainer__description__profile">
+                    <div><img src="https://i.pravatar.cc/150?img=33" alt=""></div>
+                    <p></p>
+                  </div>
+                  <form class="createModalContainer__description__form">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="이메일을 입력하세요">이메일을 입력하세요</textarea>
+                  </form>
+                </div>
+              </div>
+              <div class="createModalContainer__share"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="./js/explore.js"></script>
+<script src="./js/components/navmenu.js"></script>
+<script src="./js/notification.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/components/modalAction.js"></script>
+</html>
