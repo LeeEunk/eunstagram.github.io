@@ -1,0 +1,74 @@
+.notificationSection {
+  position: absolute;
+  left: -500px;
+  padding: 24px 8px;
+  transition: all 0.5s ease; 
+  opacity: 0;
+  height: 100vh;
+  background-color: white;
+  top: 0px;
+}
+
+/* padding : 상하 좌우 */
+.notificationSection.show {
+  position: absolute;
+  left: 160px;
+  padding: 24px 8px;
+  transition: all 0.75s ease;
+  opacity: 1;
+  top: 0px;
+}
+
+.notificationSection h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  }
+
+.notificationSection__cart {
+    display: flex;
+    align-items: center;
+  }
+.notificationSection__profile {
+    display: flex;
+    align-items: center;
+  }
+.notificationSection__img {
+  width : 50px;
+  border-radius: 50%;
+  padding: 2px;
+  border: 1px solid grey;
+}
+
+.notificationSection__cart {
+  margin-bottom: 18px;
+}
+
+.notificationSection__name {
+  font-weight : 500;
+  font-size : 15px;
+}
+
+.notificationSection__name span {
+  color : grey;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.notificationSection__info {
+  margin-left: 8px;
+  width: 240px;
+}
+
+.notificationSection__follow button {
+  background-color: rgb(0, 149, 246);
+  border: none;
+  padding : 6px 8px;
+  border-radius: 4px;
+  color : white;
+}
+
+.notificationSection__story img {
+  width : 55px;
+  
+}
