@@ -1,0 +1,175 @@
+@import 'reset.css';
+/* content의 내용이 너비와 높이에 패딩과 볼더를 포함하도록 함 */
+* {
+  box-sizing: border-box;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.profileContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 40px;
+}
+
+.profileContainer__info__left img {
+  width : 150px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  padding: 1px;
+  margin-right: 42px;
+}
+
+.profileContainer__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profileContainer__info__name {
+  font-size: 22px;
+}
+
+.profileContainer__info__name button {
+  margin-left : 12px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.profileContainer__info__right {
+  margin-bottom: 16px;
+}
+
+.profileContainer__info__numbers {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.profileContainer__info__numbers p {
+  margin-right: 12px;
+}
+
+.profileContainer__lists {
+  display: flex;
+}
+
+.profileContainer__lists__name p,
+.profileContainer__lists__account p{
+  position: relative;
+  left: 22px;
+}
+
+.profileContainer__lists__name img{
+  width : 100px;
+  border-radius: 50%;
+  padding: 1px;
+  border: 1px solid grey;
+  margin-right: 24px;
+}
+
+.profileContainer__lists__account img{
+  width: 100px;
+}
+
+.profileContainer__lists__name div
+{
+  margin-bottom : 12px;
+}
+
+.profileContainer__lists__account div {
+  margin-bottom: 16px;
+}
+
+hr {
+  width: 100%;
+}
+
+.profileContainer__profile__ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.profileContainer__profile__li button {
+  background-color: white;
+  border: none;
+  padding: 12px 8px;
+  margin-right: 12px;
+}
+
+.profileContainer__profile__li{
+  margin-right: 12px;
+}
+
+.profileContainer__profile__li:last-child {
+  margin-right: 0px;
+}
+
+.profileContainer__profile__li button.active {
+  background-color: rgb(239, 239, 239);
+  border-radius: 12px;
+}
+
+.profileContainer__posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap : 5px;
+}
+
+.profileContainer__item img {
+  width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width : 498px) {
+  .mainContainer {
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+  }
+
+  .messageContainer {
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+  }
+
+  .profileContainer__info {
+    display: block;
+  }
+
+     .profileContainer__posts {
+       grid-template-columns: 1fr 1fr;
+     }
+
+
+}
+
+@media screen and (min-width : 498px) and (max-width : 768px) {
+
+  .mainContainer {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .profileContainer__posts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media screen and (min-width : 768px) and (max-width : 992px) {
+  .profileContainer__posts {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width : 992px) {}
