@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OutstaGroup</title>
+  <link rel="stylesheet" href="./css/sign_up.css">
+</head>
+<body>
+  <div class="signUp">
+    <div class="signUp__content">
+      <div class="signUp__logBox border_insc">
+        <div class="signUp__logo">
+          <p>회원가입하시고 친구들과 일상을 공유하세요</p>
+          <button>
+            <a href="./home.html">
+              <img src="./images/meta_white.png" alt="facebook icon">
+              메타로 회원가입 하기
+            </a>
+          </button>
+          <div class="signUp__seperator">
+            <span class="signUp__seperator__ligne"></span>
+            <span class="signUp__seperator__ou">또는</span>
+            <span class="signUp__seperator__ligne"></span>
+          </div>
+        </div>
+        <form action="" method="post">
+          <div>
+            <input type="email" name="email" id="signUp__email" placeholder="이메일">
+          </div>
+          <div>
+            <input type="text" name="name" id="signUp__name" placeholder="성">
+          </div>
+          <div>
+            <input type="text" name="username" id="signUp__username" placeholder="이름">
+          </div>
+          <div>
+            <input type="password" name="password" id="signUp__password" placeholder="비밀번호">
+          </div>
+          <div class="signUp__info">
+            <p>
+              회원가입 함으로써
+              <a href="#">개인정보 이용약관에 동의합니다.</a>
+            </p>
+          </div>
+        </form>
+        <button class="loginBtn">
+          회원가입
+        </button>
+      </div>
+      <div class="signUp__singIn border_insc">
+        
+        <p>
+          계정이 있으신가요?
+          <a href="./index.html">로그인하기</a>
+        </p>
+      </div>
+      <div class="signUp__download">
+        <p>앱 다운로드 하기</p>
+        <div>
+          <a href="https://play.google.com/store/apps" target="_blank" rel="noopener noreferrer">
+            <img src="./images/playstore.png" alt="download app from google play">
+          </a>
+          <a href="https://apps.apple.com/kr/app/apple-store/id375380948" target="_blank" rel="noopener noreferrer">
+            <img src="./images/appstore.png" alt="download app from apple">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/sign_up.js"></script>
+</html>
