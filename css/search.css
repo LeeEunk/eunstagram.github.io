@@ -1,0 +1,98 @@
+/* 안보이게 왼쪽으로 숨김 -> 왼쪽에서 튀어나옴 */
+/* opacity : 0 > 안보임 */
+.searchSection {
+  position: absolute;
+  left : -360px;
+  padding : 25px 15px;
+  width: 340px;
+  transition: all 0.5s ease;
+  opacity: 0;
+  background-color: white;
+  height: 100vh;
+  top: 0px;
+}
+
+
+.searchSection.show {
+ position: absolute;
+ left : 150px;
+  padding: 25px 15px;
+  width: 340px;
+  transition: all 0.75s ease;
+  opacity: 1;
+  top: 0px;
+}
+
+.searchSection h1 {
+  font-size: 26px;
+}
+
+.searchSection form {
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+/* 서치 박스 호버시 테두리 파란색 없애기 > outline : none */
+.searchSection input {
+  height: 20px;
+  width: 325px;
+  padding: 8px;
+  border: none;
+  background-color: rgb(239, 239, 239);
+  border-radius: 6px;
+  outline: none;
+}
+
+/* display : flex : 나란히 정렬 */
+/* space-between 가운데 공백 > 최근     초기화 */
+.searchSection__desc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.searchSection__desc h4{
+  font-size : 20px;
+  font-weight: 500;
+}
+
+.searchSection__desc p {
+  color : rgb(0, 149, 246);
+}
+
+.searchSection__cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchSection__profile {
+  display: flex;
+  align-items: center;
+}
+
+/* 프로필 이미지 원으로 표현 -> border-radius 주기 */
+.searchSection__img img{
+width : 50px;
+border-radius: 50%;
+border : 1px solid grey;
+padding: 2px;
+}
+
+.searchSection__info {
+  margin-left : 8px;
+}
+
+.searchSection__nickname {
+  font-size : 14px;
+  font-weight: 600;
+}
+.searchSection__name {
+  margin-top: 4px;
+  font-size : 14px;
+  color : rgb(142, 142, 142)
+}
+
+.searchSection__clear a {
+  color : rgb(142, 142, 142)
+}
