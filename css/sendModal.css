@@ -1,0 +1,114 @@
+.sendModalContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 16px;
+    z-index: 5;
+  }
+  
+  .sendModalContainer.show {
+    display: block;
+  }
+  
+  .sendModalContainer__modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sendModalContainer__modalHeader h1 {
+    font-size: 18px;
+  }
+  
+  #sendModalClose {
+    font-size: 24px;
+    opacity: 0.5;
+  }
+  
+  #sendModalClose:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .sendModalContainer__modalBody__search {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+  }
+  
+  .sendModalContainer__modalBody__search p {
+    margin-right: 12px;
+    font-size: 16px;
+  }
+  
+  .sendModalContainer__modalBody__search input{
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+  }
+  
+  .sendModalContainer__modalBody__recomList {
+    font-size : 16px;
+    font-weight : 600;
+    margin-bottom: 12px;
+  }
+  
+  .sendModalContainer__modalBody {
+    border-top: 1px solid #dee2e6;
+    margin : 14px 0px;
+    padding: 14px 0px;
+  }
+  
+  .sendModalContainer__modalBody_left img {
+    width: 45px;
+      border-radius: 50%;
+  }
+  
+  .sendModalContainer__modalBody__person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .sendModalContainer__modalBody__person:last-child {
+    margin-bottom: 0px;
+  }
+  
+  .sendModalContainer__modalBody_left {
+    margin-right : 16px;
+  }
+  
+  .sendModalContainer__modalBody__right p:first-child {
+    font-size: 16px;
+  }
+  .sendModalContainer__modalBody__right p:nth-child(2) {
+   font-size: 14px;
+   color : grey;
+  }
+  
+  .sendModalContainer__modalFooter button{
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 0px;
+    font-size: 16px;
+    color : white;
+    background-color: blue;
+    opacity: 0.5;
+  }
+  
+  .sendModalContainer__modalFooter button:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  @media screen and (max-width:500px) {
+    .sendModalContainer {
+      width: 80%;
+    }
+  }
