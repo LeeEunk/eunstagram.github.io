@@ -1,0 +1,27 @@
+.owlCarousel {
+    display : flex;
+  }
+  
+  .secondContainer__stories {
+    overflow: hidden;
+  }
+  
+  /* 드래그 시 이미지 딸려오는거 막기 */
+  .owlCarousel.items img{
+    
+    -webkit-user-drag: none; 
+    -khtml-user-drag : none;
+    -moz-user-drag : none;
+    -o-user-drag : none;
+    width : 54px;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 2px;
+    border: 1px solid grey;
+  }
+  
+  .owlCarousel.items p {
+    color : grey;
+    text-align: center;
+    margin-right : 10px;
+  }
