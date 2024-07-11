@@ -1,0 +1,130 @@
+
+.addModalContainer {
+    /* 처음 */
+    display: none; 
+    /* absolute는 document.body를 기준으로해서 좌표값이 정해짐 */
+    /* 언제나 모달 가운데 정렬 -> viewport를 기준으로 좌표값 정해짐 */
+    position: fixed;
+    top: 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 16px;
+    z-index: 5;
+  }
+  
+  .addModalContainer.modalOpen {
+    display: block;
+  }
+  
+  .addModalContainer__modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .addModalContainer__modalHeader h1 {
+    font-size: 18px;
+  }
+  
+  .addModalContainer__modalHeader i {
+    font-size : 22px;
+    opacity: 0.5;
+  }
+  
+  .addModalContainer__modalHeader i:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .addModalContainer__modalBody {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    margin : 16px 0px;
+    padding: 16px 0px;
+  }
+  
+  .addModalContainer__comment,
+  .addModalContainer__response {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .addModalContainer__right,
+  .addModalContainer__response__right {
+    position : relative;
+    bottom: 12px;
+  }
+  
+  .addModalContainer__img img,
+  .addModalContainer__response__img img,
+  .addModalContainer__modalFooter__container img {
+    width : 35px;
+    border-radius: 50%;
+  }
+  
+  .addModalContainer__nickname {
+    font-size : 14px;
+  }
+  
+  .addModalContainer__recomment,
+  .addModalContainer__translation,
+  .addModalContainer__response__recomment,
+  .addModalContainer__response__translation {
+    background-color: white;
+    border: none;
+    color : grey;
+  }
+  
+  .addModalContainer__see__comment button {
+    border: none;
+    background-color: white;
+  }
+  
+  .addModalContainer__see__comment {
+    margin-top: 8px;
+  }
+  .addModalContainer__show_c,
+  .addModalContainer__hide_c {
+    color: grey;
+  }
+  
+  .addModalContainer__response {
+    padding-left: 16px;
+    padding-top: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .addModalContainer__response__nickname {
+    font-size: 14px;
+  }
+  
+  .addModalContainer__right img,
+  .addModalContainer__response__right img {
+    width : 18px;
+  }
+  
+  .addModalContainer__modalFooter__container input {
+    border: none;
+    outline: none;
+    position: relative;
+    bottom: 12px;
+    left: 4px;
+  }
+  
+  .addModalContainer__response__left,
+  .addModalContainer__response__right {
+    display: none;
+  }
+  
+  .addModalContainer__show_c:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (max-width:500px) {
+    .addModalContainer {
+      width: 80%;
+    }
+  }
